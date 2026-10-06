@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="520" viewBox="0 0 860 520" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#15171c"/>
+      <stop offset="1" stop-color="#0f1115"/>
+    </linearGradient>
+  </defs>
+  <rect width="860" height="520" rx="12" fill="url(#bg)" stroke="#2a2e37"/>
+  <!-- title bar -->
+  <rect x="0" y="0" width="860" height="34" rx="12" fill="#1c1f26"/>
+  <rect x="0" y="20" width="860" height="14" fill="#1c1f26"/>
+  <circle cx="20" cy="17" r="6" fill="#ff5f57"/><circle cx="40" cy="17" r="6" fill="#febc2e"/><circle cx="60" cy="17" r="6" fill="#28c840"/>
+  <text x="430" y="21" fill="#8b919e" text-anchor="middle" font-size="12">claude — ~/projects/cli-tool</text>
+
+  <g fill="#c9d1d9">
+    <text x="24" y="62"><tspan fill="#8b919e">&gt; </tspan>add a --dry-run flag to the CLI and wire it through runCommand()</text>
+
+    <text x="24" y="92"><tspan fill="#3fb950">●</tspan> Edit src/cli.js <tspan fill="#8b919e">✓</tspan></text>
+    <text x="24" y="112"><tspan fill="#3fb950">●</tspan> Edit src/run.js <tspan fill="#8b919e">✓</tspan></text>
+    <text x="24" y="132"><tspan fill="#f85149">●</tspan> Bash npm test</text>
+    <text x="40" y="152" fill="#f0b429">⏸ usage-guard PAUSED development: 5h at 80% (threshold 80%, resets 05:10, in 2h 14m)</text>
+
+    <text x="24" y="182"><tspan fill="#3fb950">●</tspan> Write ~/.claude/usage-guard/checkpoint.md <tspan fill="#8b919e">✓</tspan></text>
+    <text x="24" y="202"><tspan fill="#3fb950">●</tspan> CronCreate <tspan fill="#8b919e">13 5 6 10 *  →  "/usage-guard resume"</tspan> <tspan fill="#8b919e">✓</tspan></text>
+
+    <text x="24" y="236" fill="#e6edf3">Paused at 80% of the 5-hour window. Checkpoint saved: cli.js and run.js are done,</text>
+    <text x="24" y="254" fill="#e6edf3">the test and npm test remain. Resuming automatically at 05:13.</text>
+    <text x="24" y="272" fill="#e6edf3">Say "keep going" to override.</text>
+
+    <text x="430" y="312" fill="#5c6370" text-anchor="middle">· · ·  2h 17m later, session idle  · · ·</text>
+
+    <text x="24" y="350"><tspan fill="#58a6ff">●</tspan> /usage-guard resume</text>
+    <text x="40" y="370" fill="#8b919e">5h 3%/80% · weekly 58%/95%  →  clear. Resuming from checkpoint at step 3: add the test.</text>
+    <text x="24" y="398"><tspan fill="#3fb950">●</tspan> Edit test/run.test.js <tspan fill="#8b919e">✓</tspan></text>
+    <text x="24" y="418"><tspan fill="#3fb950">●</tspan> Bash npm test <tspan fill="#8b919e">✓  12 passing</tspan></text>
+
+    <text x="24" y="452" fill="#e6edf3">Done. --dry-run is wired through runCommand() with a test; nothing was lost to the limit.</text>
+  </g>
+
+  <!-- status line -->
+  <rect x="0" y="486" width="860" height="34" fill="#1c1f26"/>
+  <rect x="0" y="486" width="860" height="22" fill="#1c1f26"/>
+  <text x="24" y="507" fill="#8b919e" font-size="12">guard: 5h 3%/80% · weekly 58%/95%</text>
+  <text x="836" y="507" fill="#5c6370" font-size="12" text-anchor="end">claude-code-autopause</text>
+</svg>
